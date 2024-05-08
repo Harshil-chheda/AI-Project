@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Brython App</title>
+    <script type="text/javascript" src="brython.js"></script>
+</head>
+<body onload="brython()">
+    <script type="text/python">
+        from browser import document
+
+        def main():
+            document['output'].text = "Hello, Brython!"
+
+        main()
+    </script>
+    <div id="output"></div>
+</body>
+</html>
